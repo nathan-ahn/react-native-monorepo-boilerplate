@@ -1,8 +1,11 @@
 {
 	"name": "expo-app",
+	"version": "1.0.0",
 	"scripts": {
 		"start": "bunx expo start --dev-client",
-		"ios": "expo run:ios --scheme swsh -d "
+		"ios": "expo run:ios --scheme expo-app -d ",
+		"android": "expo run:android",
+		"rebuild": "rm -rf ios android && bunx expo prebuild"
 	},
 	"expo": {
 		"autolinking": {
@@ -16,6 +19,7 @@
 	},
 	"dependencies": {
 		"expo": "~53.0.0",
+		"expo-build-properties": "~0.14.0",
 		"expo-dev-client": "~5.1.0",
 		"react-native": "0.79.4",
 		"src": "workspace:*"
