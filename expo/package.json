@@ -1,0 +1,23 @@
+{
+	"name": "expo-app",
+	"scripts": {
+		"start": "bunx expo start --dev-client",
+		"ios": "expo run:ios --scheme swsh -d "
+	},
+	"expo": {
+		"autolinking": {
+			"searchPaths": [
+				"../packages",
+				"../node_modules",
+				"../../node_modules"
+			],
+			"nativeModulesDir": "../packages"
+		}
+	},
+	"dependencies": {
+		"expo": "~53.0.0",
+		"expo-dev-client": "~5.1.0",
+		"react-native": "0.79.4",
+		"src": "workspace:*"
+	}
+}
